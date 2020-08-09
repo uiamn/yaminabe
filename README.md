@@ -2,4 +2,4 @@
 
 uiamnの雑多なコードを置いておくためのリポジトリ
 
-A repository for my committing miscellaneous code.
+A repository for committing my miscellaneous code.
