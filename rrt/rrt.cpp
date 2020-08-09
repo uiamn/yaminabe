@@ -217,7 +217,7 @@ int main() {
     circ objs[N_OBJ];
     cv::Mat back = cv::Mat::zeros(SIZE, SIZE, CV_8UC3);
 
-    cv::namedWindow("Example", cv::WINDOW_AUTOSIZE);
+    cv::namedWindow("RRT", cv::WINDOW_AUTOSIZE);
 
     for(int i=0; i<N_OBJ; i++) {
         auto x = rand() % SIZE, y = rand() % SIZE, r = rand() % (OBJ_R_MAX - OBJ_R_MIN) + OBJ_R_MIN;
@@ -235,9 +235,9 @@ int main() {
 
     rrt(back, objs);
 
-    cv::imshow("Example", back);
-    cv::imwrite("a.png", back);
+    cv::imshow("RRT", back);
+    cv::imwrite("result.png", back);
     cv::waitKey(0);
-    cv::destroyWindow("Example");
+    cv::destroyWindow("RRT");
     return 0;
 }
